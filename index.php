@@ -18,7 +18,7 @@
               <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a type="button" class="btn btn-primary nav-link active" href="create.php">Add New</a>
+              <a type="button" class="btn btn-primary nav-link active" href="create.php">Add another OAT</a>
             </li>
           </ul>
         </div>

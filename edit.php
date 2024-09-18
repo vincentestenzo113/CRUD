@@ -10,7 +10,7 @@
 
   if($_SERVER["REQUEST_METHOD"]=='GET'){
     if(!isset($_GET['id'])){
-      header("location:crud100/index.php");
+      header("location:CRUD/index.php");
       exit;
     }
     $id = $_GET['id'];
@@ -18,7 +18,7 @@
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
     while(!$row){
-      header("location: crud100/index.php");
+      header("location: CRUD/index.php");
       exit;
     }
     $name=$row["name"];
@@ -52,7 +52,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="fw-bold">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">PHP CRUD OPERATION</a>
+        <a class="navbar-brand" href="index.php">CRUD CHECK</a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">

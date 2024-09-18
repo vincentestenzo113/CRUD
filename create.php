@@ -7,7 +7,13 @@
         $q = " INSERT INTO `crud2`(`name`, `email`, `phone`) VALUES ( '$name', '$email', '$phone' )";
 
         $query = mysqli_query($conn,$q);
-    }
+
+        // Redirect to index.php after successful insertion
+        if($query){
+            header('Location: index.php');
+            exit(); // Ensure that the script stops executing after the redirect
+        }
+    }   
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +29,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">PHP CRUD OPERATION</a>
+        <a class="navbar-brand" href="index.php">CRUD CHECK</a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
