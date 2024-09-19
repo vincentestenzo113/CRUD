@@ -8,10 +8,9 @@
 
         $query = mysqli_query($conn,$q);
 
-        // Redirect to index.php after successful insertion
         if($query){
             header('Location: index.php');
-            exit(); // Ensure that the script stops executing after the redirect
+            exit(); // 
         }
     }   
 ?>
@@ -52,13 +51,13 @@
  <h1 class="text-white text-center"> OPEN MINDED KABA ?</h1>
  </div><br>
 
- <label> NAME: </label>
+ <label> Full Name: </label>
  <input type="text" name="name" class="form-control"> <br>
 
- <label> EMAIL: </label>
+ <label> Email Address: </label>
  <input type="text" name="email" class="form-control"> <br>
 
- <label> PHONE NUMBER: </label>
+ <label>Phone Number: </label>
  <input type="text" name="phone" class="form-control"> <br>
 
  <button class="btn btn-success" type="submit" name="submit"> Submit </button><br>
